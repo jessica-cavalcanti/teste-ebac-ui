@@ -4,7 +4,7 @@ const { faker } = require('@faker-js/faker');
 
 describe('Funcionalidade Página de Produtos', () => {
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos')
 
     });
 
@@ -17,7 +17,7 @@ describe('Funcionalidade Página de Produtos', () => {
 
     });
 
-    it.only('Deve adicionar o produto ao carrinho', () => {
+    it('Deve adicionar o produto ao carrinho', () => {
 
         var quantidade = 13
 
