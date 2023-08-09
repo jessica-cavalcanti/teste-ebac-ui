@@ -34,4 +34,13 @@ describe('Funcionalidade Página de Produtos', () => {
 
     });
 
+    it('Deve adicionar produtos ao carrinho - Usando Comando customizados', () => {
+        cy.addProdutos('Abominable Hoodie', 'M', 'Blue', 2)
+    });
+
+    
+    it('Deve adicionar produtos ao carrinho - Usando Comando customizados', () => {
+        cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'XS', 'Red', 5)
+    });
+
 });
